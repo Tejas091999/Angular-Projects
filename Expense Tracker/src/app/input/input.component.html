@@ -1,0 +1,17 @@
+<div>
+    <form (ngSubmit)="submitExpense()">
+        <label for="name">Name of Expense:</label>
+        <input type="text"  [(ngModel)]="name" id="name"  required/>
+
+        <label for="caterogy">Caterogy:</label>
+        <input type="text"  [(ngModel)]="category" id="category" required/>
+
+        <label for="amount">Amount:</label>
+        <input type="number" [(ngModel)]="amount" id="amount" required/>
+
+        <label for="date">Date:</label>
+        <input type="date" [(ngModel)]="date" id="date" required/>
+
+        <button type="submit">Add Expense</button>
+    </form>
+</div>

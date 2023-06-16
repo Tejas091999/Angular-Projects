@@ -1,0 +1,19 @@
+<h2>Expense List</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let expense of expenses; let i = index">
+            <td>{{expense.name}}</td>
+            <td>{{expense.category}}</td>
+            <td>{{expense.amount}}</td>
+            <td>{{expense.date}}</td>
+        </tr>
+    </tbody>
+</table>
