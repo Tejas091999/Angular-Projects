@@ -1,0 +1,36 @@
+.body{
+    background-color: rgb(11, 11, 66);
+    color: rgb(84, 84, 201);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title{
+    font-size: 50px;
+}
+.task{
+    width: 250px;
+    height: 35px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-left: 6px;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    border: 3px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgb(162, 162, 220);
+}
+.btn1{
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    border: 3px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgb(214, 20, 20);
+}
+li{
+    margin-top: 3px;
+}
