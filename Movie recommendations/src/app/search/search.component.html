@@ -1,0 +1,13 @@
+<h2>Search Movies</h2>
+<form (ngSubmit)="searchMovies()">
+    <input type="text" [(ngModel)]="searchQuery" placeholder="Enter the movie title"/>
+    <button type="submit">Search</button>
+</form>
+<div *ngIf="movies.length===0">
+    No movies found
+</div>
+<div>
+    <img [src]="movie.poster" alt="Movie Poster" width="150"/>
+    <h3>{{ movie.title }}</h3>
+    <p> Year : {{ movie.year }}</p>
+</div>

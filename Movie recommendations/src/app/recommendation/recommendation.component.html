@@ -1,0 +1,6 @@
+<h2>Personalized Recommendations</h2>
+<div *ngFor="let movie of recommendations">
+    <imf [src]="movie.poster" alt="Movie Poster" width="150"/>
+    <h3>{{ movie.title }}</h3>
+    <p>Year:{{ movie.year }}</p>
+</div>

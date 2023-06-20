@@ -1,0 +1,14 @@
+<h2>Filter Component</h2>
+<form (ngSubmit)="filterMovies()">
+    <label for="genre">Genre:</label>
+    <input type="text" [(ngModel)]="genre" name="genre"/>
+    <button type="submit">Filter</button>
+</form>
+<div *ngIf="filteredMovies.length===0">
+    No movies found
+</div>
+<div *ngFor="let movie of filteredMovies">
+    <img [src]="movie.poster" alt="Movie Poster" width="150"/>
+    <h3>{{ movie.title }}</h3>
+    <p> Year: {{ movie.year}}</p>
+</div>
