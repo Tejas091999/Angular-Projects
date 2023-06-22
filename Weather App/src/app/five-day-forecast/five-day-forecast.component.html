@@ -1,0 +1,6 @@
+<h2>Five-day Forecast</h2>
+<div *ngIf="fiveDayForecast">
+    <ul>
+        <li *ngFor="let forecast of fiveDayForecast">{{ forecast.date }}:{{ forecast.temperature }}*C</li>
+    </ul>
+</div>
