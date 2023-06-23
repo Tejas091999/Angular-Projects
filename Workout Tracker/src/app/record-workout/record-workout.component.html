@@ -1,0 +1,21 @@
+<h2>Record Workout</h2>
+<div>
+    <form (ngSubmit)="recordExercises()">
+            <label>Workout Name:</label>
+            <select id="workout" [(ngModel)]="selectedWorkout" name="workout">
+                <option *ngFor="let workout of workouts" [value]="workout">{{ workout.name }}</option>
+            </select>
+        
+            <label for="exercise">Exercises:</label>
+            <input type="text" id="exercises" [(ngModel)]="exercise" name="exercise"/>
+        
+
+            <label for="sets">Sets:</label>
+            <input type="number" id="sets" [(ngModel)]="sets" name="sets"/>
+
+            <label for="reps">Reps:</label>
+            <input type="number" id="reps" [(ngModel)]="reps" name="reps"/>
+
+        <button type="submit">Record</button>
+    </form>
+</div>
