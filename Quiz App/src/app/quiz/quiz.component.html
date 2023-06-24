@@ -1,0 +1,20 @@
+<div *ngIf="!isFinished">
+    <h2>Quiz App</h2>
+    <p>Category:{{ category }}</p>
+    <p>Difficulty:{{ difficulty }}</p>
+    <h3>Question {{ currentQuestionIndex +1 }} of {{ totalQuestions }}</h3>
+    <p>{{ question }}</p>
+    <ul>
+        <li *ngFor="let option of options; let i = index">
+            <input type="radio" name="answer" [value]="i" (change)="selectOption(i)" [disabled]="answered"/>
+            {{ option }}
+        </li>
+    </ul>
+    <button (click)="nextQuestion()" [disabled]="!answered">Next</button>
+    <div *ngIf="showTimer">Time Left : {{ timeLeft }} seconds</div>
+</div>
+<div *ngIf="isFinished"> 
+    <h2>Quiz Finished</h2>
+    <p>Your score : {{ score }}</p>
+    <button (click)="restartQuiz()">Restart</button>
+</div>
